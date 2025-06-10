@@ -7,8 +7,8 @@ const { pick } = require("../util/propertyHelper");
 
 
 exports.addStudent = async function (studentObj) {
-    stuObj = pick(stuObj, "name", "Birth", "Gender", "Phone", "ClassId");
-    console.log(stuObj)
+    stuObj = pick(studentObj, "name", "Birth", "Gender", "Phone", "ClassId");
+    // console.log(stuObj)
     validate.validators.classExits = async function (value) {
         const c = await Class.findByPk(value);
         if (c) {
@@ -47,7 +47,8 @@ exports.addStudent = async function (studentObj) {
             presence: {
                 allowEmpty: false,
             },
-            format: /1\d{12}/,
+            format: /\d{3}-\d{3}-\d{4}/,
+            type: "string",
         },
         ClassId: {
             presence: true,
@@ -74,7 +75,7 @@ exports.deleteStudent = async function (studentId) {
     // const res = await ins.destroy();
 
     //Method 2
-    await Student.destroy({
+    return await Student.destroy({
         where: {
             id: studentId
         }
@@ -82,7 +83,7 @@ exports.deleteStudent = async function (studentId) {
 }
 
 
-exports.updateAdmin = async function (id, studentObj) {
+exports.updateStudent = async function (id, studentObj) {
     //Method 1: get instance and update
     // const ins = await Admin.findByPk(id);
     // ins.loginId = studentObj.loginId;
@@ -94,6 +95,7 @@ exports.updateAdmin = async function (id, studentObj) {
             id
         }
     })
+    return res;
 
 }
 
@@ -133,6 +135,11 @@ exports.getStudentsV2 = async function (page = 1, limit = 10, gender = -1, name 
         total: res.count,
         datas: JSON.parse(JSON.stringify(res.rows))
     }
+}
+
+exports.getStudentById = async function (id) {
+    const res = await Student.findByPk(id)
+    return JSON.parse(JSON.stringify(res));
 }
 
 

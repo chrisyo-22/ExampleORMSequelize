@@ -1,5 +1,5 @@
 const { Sequelize } = require('sequelize');
-const { sqlLogger } = require("./logger");
+const { sqlLogger } = require("../logger");
 
 const sequelize = new Sequelize('school', 'root', 'chris', {
     host: 'localhost',

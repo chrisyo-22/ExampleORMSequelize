@@ -1,5 +1,5 @@
-const moment = require("moment");
-moment.locale("zh-cn");
+// const moment = require("moment");
+// moment.locale("zh-cn");
 //get current time，moment object
 // console.log(moment().toString());
 // console.log(moment.utc().toString());
@@ -16,7 +16,7 @@ moment.locale("zh-cn");
 // console.log(moment.utc(value).toString(), +moment.utc(value));
 
 //token： "YYYY-MM-DD HH:mm:ss"
-const formats = ["YYYY-MM-DD HH:mm:ss", "YYYY-M-D H:m:s", "x"];
+// const formats = ["YYYY-MM-DD HH:mm:ss", "YYYY-M-D H:m:s", "x"];
 // console.log(moment.utc("1970-01-01 00:00:00", formats, true).toString());
 // console.log(moment.utc("1970-1-1 0:0:0", formats, true).toString());
 // console.log(moment.utc(0, formats, true).toString());
@@ -37,10 +37,12 @@ const formats = ["YYYY-MM-DD HH:mm:ss", "YYYY-M-D H:m:s", "x"];
 // const toServer = m.utc().format("YYYY-MM-DD HH:mm:ss");
 // console.log(toServer);
 
-const m = moment.utc("2020-4-14 9:00:01", formats, true);
-console.log(m.local().fromNow());
+// const m = moment.utc("2020-4-14 9:00:01", formats, true);
+// console.log(m.local().fromNow());
 
-const { sqlLogger } = require("./logger");
-setInterval(() => {
-    sqlLogger.debug("one sql")
-}, 100);
+// const { sqlLogger } = require("./logger");
+// setInterval(() => {
+//     sqlLogger.debug("one sql")
+// }, 100);
+
+require("./init");
