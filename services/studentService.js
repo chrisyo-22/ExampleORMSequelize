@@ -95,6 +95,7 @@ exports.updateStudent = async function (id, studentObj) {
             id
         }
     })
+    // console.log(studentObj);
     return res;
 
 }

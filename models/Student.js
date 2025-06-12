@@ -1,5 +1,6 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require('./db');
+const moment = require("moment");
 const Student = sequelize.define("Student", {
     name: {
         type: DataTypes.STRING,
@@ -8,6 +9,14 @@ const Student = sequelize.define("Student", {
     Birth: {
         type: DataTypes.DATE,
         allowNull: false,
+        get(){
+            const birth = this.getDataValue("Birth");
+            if(birth){
+                return birth.getTime();
+            }
+            return undefined;
+        }
+
     },
     Gender: {
         type: DataTypes.BOOLEAN,
@@ -20,6 +29,14 @@ const Student = sequelize.define("Student", {
     ClassId: {
         type: DataTypes.STRING,
         allowNull: false,
+    },
+    age:{
+        type:DataTypes.VIRTUAL,
+        get(){
+            const now = moment.utc();
+            const birth = moment.utc(this.Birth);
+            return now.diff(birth, "y");
+        }
     }
 },
     {

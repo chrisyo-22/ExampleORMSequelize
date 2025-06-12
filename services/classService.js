@@ -22,18 +22,22 @@ exports.deleteClass = async function (classId) {
 
 
 exports.updateClass = async function (id, classObj) {
-    //Method 1: get instance and update
-    // const ins = await Admin.findByPk(id);
-    // ins.loginId = studentObj.loginId;
-    // ins.save();
+    // First check if class exists
+    const classInstance = await Class.findByPk(id);
+    if (!classInstance) {
+        throw new Error("Class not found");
+    }
 
-    //Method 2:
-    const res = await Class.update(classObj, {
+    // Update the class
+    await Class.update(classObj, {
         where: {
             id
         }
-    })
+    });
 
+    // Return the updated class data
+    const updatedClass = await Class.findByPk(id);
+    return JSON.parse(JSON.stringify(updatedClass));
 }
 
 

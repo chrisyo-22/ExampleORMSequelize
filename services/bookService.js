@@ -21,18 +21,22 @@ exports.deleteBook = async function (BookId) {
 }
 
 exports.updateBook = async function (id, bookObj) {
-    //Method 1: get instance and update
-    // const ins = await Admin.findByPk(id);
-    // ins.loginId = adminObj.loginId;
-    // ins.save();
+    // First check if book exists
+    const book = await Book.findByPk(id);
+    if (!book) {
+        throw new Error("Book not found");
+    }
 
-    //Method 2:
-    const res = await Book.update(bookObj, {
+    // Update the book
+    await Book.update(bookObj, {
         where: {
             id
         }
-    })
+    });
 
+    // Return the updated book data
+    const updatedBook = await Book.findByPk(id);
+    return JSON.parse(JSON.stringify(updatedBook));
 }
 
 /**
