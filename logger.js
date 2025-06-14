@@ -1,30 +1,38 @@
 const log4js = require("log4js");
 const path = require("path");
 
+function getCommonAppender(pathSeg) {
+    return {
+        // Define a SQL log output appender
+        type: "dateFile", // Uses date-based file rotation
+        filename: path.resolve(__dirname, "logs", pathSeg, "logging.log"), // Path to log file
+        maxLogSize: 1024 * 1024, // Maximum file size in bytes before rotation (1KB)
+        keepFileExt: true, // Preserve .log extension when rotating files
+        daysToKeep: 3,
+        // Layout: Define how log messages should be formatted
+        layout: {
+            type: "pattern", // Use pattern-based formatting
+            // Pattern explanation:
+            // %c = category name (e.g., "sql")
+            // %d{yyyy-MM-dd hh:mm:ss} = timestamp in specified format
+            // %p = log level (INFO, DEBUG, ERROR, etc.)
+            // %m = log message
+            // %n = newline character
+            pattern: "%c [%d{yyyy-MM-dd hh:mm:ss}] [%p]: %m%n",
+        },
+        numBackups: 10, // Keep maximum 10 backup files (oldest gets deleted when exceeded)
+
+    }
+}
+
+
 // Configure log4js with appenders and categories
 log4js.configure({
     // Appenders: Define where and how logs should be written
     appenders: {
         // SQL log appender - handles database-related logging
-        sql: {
-            // Define a SQL log output appender
-            type: "dateFile", // Uses date-based file rotation
-            filename: path.resolve(__dirname, "logs", "sql", "logging.log"), // Path to log file
-            maxLogSize: 1024 * 1024, // Maximum file size in bytes before rotation (1KB)
-            keepFileExt: true, // Preserve .log extension when rotating files
-            // Layout: Define how log messages should be formatted
-            layout: {
-                type: "pattern", // Use pattern-based formatting
-                // Pattern explanation:
-                // %c = category name (e.g., "sql")
-                // %d{yyyy-MM-dd hh:mm:ss} = timestamp in specified format
-                // %p = log level (INFO, DEBUG, ERROR, etc.)
-                // %m = log message
-                // %n = newline character
-                pattern: "%c [%d{yyyy-MM-dd hh:mm:ss}] [%p]: %m%n",
-            },
-            numBackups: 10, // Keep maximum 10 backup files (oldest gets deleted when exceeded)
-        },
+        sql: getCommonAppender("sql"),
+        api: getCommonAppender("api"),
         // Default appender - outputs to console (stdout)
         default: {
             type: "stdout", // Standard output (console)
@@ -42,6 +50,10 @@ log4js.configure({
             appenders: ["default"], // Uses console output
             level: "all", // Log all levels
         },
+        api: {
+            appenders: ["api"],
+            level: "all",
+        }
     },
 });
 
@@ -53,8 +65,7 @@ process.on("exit", () => {
 
 // Create a logger instance for SQL-related logging
 // This logger will use the 'sql' category configuration
-const sqlLogger = log4js.getLogger("sql");
-const defaultLogger = log4js.getLogger();
+
 
 // Example usage: Log a message every 100ms for testing
 // In production, replace this with actual SQL operation logging
@@ -68,4 +79,6 @@ const defaultLogger = log4js.getLogger();
 // })
 
 
-exports.sqlLogger = sqlLogger;
+exports.sqlLogger = log4js.getLogger("sql");
+exports.apiLogger = log4js.getLogger("api");
+exports.logger = log4js.getLogger();

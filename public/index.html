@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css" />
-  </head>
-  <body>
-    <button id="login">login</button>
-    <button id="updateStu">update student</button>
-    <script src="./js/index.js"></script>
-  </body>
-</html>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <!-- <button id="login">login</button>
+  <button id="updateStu">update student</button> -->
+
+  <p>
+    <input type="text" name="a" />
+  </p>
+  <p>
+    <!-- Accept tag makes this input only allow to select image file-->
+    <input type="file" name="img" accept="image/*" multiple />
+  </p>
+  <p>
+    <button id="submitBtn">提交</button>
+  </p>
+  <img src="" alt="" />
+
+
+  <script>
+    function upload() {
+      const inpA = document.querySelector("[name=a]");
+      const inpFile = document.querySelector("[name=img]");
+      const img = document.querySelector("img");
+      const formData = new FormData();
+      formData.append("a", inpA.value);
+      for (const file of inpFile.files) {
+        formData.append("img", file, file.name);
+      }
+      // formData.append("img", inpFile.files[0]);
+      fetch("/api/upload", {
+        body: formData,
+        method: "POST"
+      })
+        .then(resp => resp.json())
+        .then(resp => {
+          if (resp.code) {
+            alert(resp.msg);
+          } else {
+            img.src = resp.data; // assuming your server returns { data: "url" }
+          }
+        });
+    }
+
+    document.querySelector("button").onclick = upload;
+
+
+  </script>
+</body>
+
+</html>

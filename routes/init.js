@@ -56,7 +56,7 @@ app.use(express.urlencoded({ extended: true }));
 //application/json format body type
 app.use(express.json());
 
-
+app.use(require("./apiLoggerMid"));
 
 //Above handle body, so that we can access through req.body nicely. Below it handle api call
 
@@ -66,6 +66,7 @@ app.use("/api/student", require("./api/student"));
 app.use("/api/class", require("./api/class"));
 app.use("/api/admin", require("./api/admin"));
 app.use("/api/book", require("./api/book"));
+app.use("/api/upload", require("./api/upload"));
 
 // app.use("/news", require("./errorMiddleware"));
 app.use(require("./errorMiddleware"));
