@@ -1,2 +1,19 @@
-1. Configure the build path, after build, put the code inside ../public
-2. Modify server static resource path, change to client/dist.
+# client
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

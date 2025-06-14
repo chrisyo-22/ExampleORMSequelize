@@ -1,9 +1,12 @@
 const { getErr } = require("./api/getSendResult");
 const { pathToRegexp } = require("path-to-regexp");
 const cryptor = require("../util/crypt");
+const jwt = require("./jwt");
+
 const needTokenApi = [
   { method: "POST", path: "/api/student" },
-  { method: "PUT", path: "/api/student/:id" }
+  { method: "PUT", path: "/api/student/:id" },
+  { method: "GET", path: "/api/admin/whoami" }
 ];
 
 // parsing token
@@ -18,13 +21,25 @@ module.exports = (req, res, next) => {
     return;
   }
 
-  if (req.session.loginUser) {
-    //already login
+  const result = jwt.verify(req);
+  if (result) {
+    //Login success, jwt is valid
+    req.userId = result.id;
     next();
   }
   else {
+    //jwt is invalid
     handleNonToken(req, res, next);
   }
+
+
+  // if (req.session.loginUser) {
+  //   //already login
+  //   next();
+  // }
+  // else {
+  //   handleNonToken(req, res, next);
+  // }
 
 
   // let token = req.cookies.token;

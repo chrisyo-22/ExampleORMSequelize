@@ -1,7 +1,7 @@
 const qs = require("querystring");
 
 module.exports = (req, res, next) => {
-    console.log(req.headers["content-type"]);
+    // console.log(req.headers["content-type"]);
     if (req.headers["content-type"] === "application/x-www-form-urlencoded") {
         let result = "";
         req.on("data", (chunk) => {

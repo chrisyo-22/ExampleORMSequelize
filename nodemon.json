@@ -1,6 +1,6 @@
 {
     "ignore":[
-        ["package*.json", "nodemon.json", "node_modules", "public"]
+        ["package*.json", "client", "nodemon.json", "node_modules", "public"]
     ],
     "watch":["*.js", "*.json"], 
     "env":{

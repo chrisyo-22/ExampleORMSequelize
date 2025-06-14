@@ -3,16 +3,18 @@ const path = require("path");
 const http = require("http");
 const app = express(); //create an app of express
 const port = 9527;
-const cors = require("cors")
+const cors = require("cors");
 
+const history = require('connect-history-api-fallback');
+app.use(history());
 //use session
-const session = require("express-session");
-app.use(session({
-    name:"session-id",
-    secret:"hello chris",
-    cookie:{
-    },
-}));
+// const session = require("express-session");
+// app.use(session({
+//     name:"session-id",
+//     secret:"hello chris",
+//     cookie:{
+//     },
+// }));
 
 const staticRoot = path.resolve(__dirname, "../public")
 
@@ -29,11 +31,16 @@ const whiteList = ["null", "http://localhost:9527"];
 app.use(
   cors({
     origin(origin, callback) {
-      if (whiteList.includes(origin)) {
-        callback(null, origin);
-      } else {
-        callback(new Error("not allowed"));
+      if (!origin) {
+        callback(null, "*");
+        return;
       }
+      return callback(null, origin);
+      // if (whiteList.includes(origin)) {
+      //   callback(null, origin);
+      // } else {
+      //   callback(new Error("not allowed"));
+      // }
     },
     credentials: true,
   })
@@ -71,5 +78,5 @@ app.use(require("./errorMiddleware"));
 
 //A better way to create server:
 app.listen(port, () => {
-    console.log(`server  listen on ${port}`);
+  console.log(`server  listen on ${port}`);
 });
