@@ -46,3 +46,15 @@
 // }, 100);
 
 require("./init");
+
+
+
+// async function test() {
+//     const waterPath = path.resolve(__dirname, "./waterChrisyo.png");
+//     const orginalPath = path.resolve(__dirname, "./orginal.jpg");
+//     const targetPath = path.resolve(__dirname, "./new.jpg");
+
+//     mark(waterPath, orginalPath, targetPath);
+// }
+
+// test();

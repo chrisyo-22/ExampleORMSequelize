@@ -5,6 +5,14 @@ const app = express(); //create an app of express
 const port = 9527;
 const cors = require("cors");
 
+app.use(require("./imgProtectMid"));
+
+
+// template rendering(MVC, the old way):
+app.set("views", path.resolve(__dirname, "./views"));
+app.use("/student", require("./controller/student")); 
+
+
 const history = require('connect-history-api-fallback');
 app.use(history());
 //use session
@@ -15,6 +23,8 @@ app.use(history());
 //     cookie:{
 //     },
 // }));
+
+
 
 const staticRoot = path.resolve(__dirname, "../public")
 
@@ -47,6 +57,10 @@ app.use(
 );
 
 
+
+
+app.use(require("./proxyMid"));
+
 const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 
@@ -61,13 +75,16 @@ app.use(require("./apiLoggerMid"));
 //Above handle body, so that we can access through req.body nicely. Below it handle api call
 
 
+
+
+
 //Student Service Router:
 app.use("/api/student", require("./api/student"));
 app.use("/api/class", require("./api/class"));
 app.use("/api/admin", require("./api/admin"));
 app.use("/api/book", require("./api/book"));
 app.use("/api/upload", require("./api/upload"));
-
+app.use("/res", require("./api/download"));
 // app.use("/news", require("./errorMiddleware"));
 app.use(require("./errorMiddleware"));
 

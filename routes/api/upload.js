@@ -7,7 +7,6 @@ const path = require("path");
 
 // })
 
-
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, path.resolve(__dirname, "../../public", "upload"))
@@ -54,6 +53,9 @@ router.post("/", upload.single("img"), (req, res, next) => {
         data: url
     });
 });
+
+
+
 
 
 module.exports = router;
