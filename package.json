@@ -30,7 +30,9 @@
     "multer": "^2.0.1",
     "mysql2": "^3.14.1",
     "path-to-regexp": "^8.2.0",
+    "qrcode": "^1.5.4",
     "sequelize": "^6.37.7",
+    "svg-captcha": "^1.4.0",
     "validate.js": "^0.13.1"
   },
   "devDependencies": {

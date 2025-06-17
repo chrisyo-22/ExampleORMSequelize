@@ -1,74 +1,100 @@
-api [2025-06-16 19:42:40] [INFO]: ::1 - - "GET /res/new.jpg HTTP/1.1" 200 114744 "" "PostmanRuntime/7.44.0"
+api [2025-06-17 14:20:40] [ERROR]: ::1 - - "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:9527/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:10:58] [WARN]: 127.0.0.1 - - "GET /api/admin/whoami HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:21:15] [ERROR]: ::1 - - "GET /api/css/index.css HTTP/1.1" 404 156 "http://localhost:9527/api/captcha" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:11:02] [WARN]: 127.0.0.1 - - "GET /api/admin/whoami HTTP/1.1" 304 - "http://localhost:8080/student" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:22:22] [ERROR]: ::ffff:127.0.0.1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:11:06] [WARN]: 127.0.0.1 - - "GET /api/admin/whoami HTTP/1.1" 304 - "http://localhost:8080/students" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:22:47] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:11:15] [WARN]: 127.0.0.1 - - "GET /api/admin/whoami HTTP/1.1" 304 - "http://localhost:8080/student" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:23:25] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:11:25] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:23:58] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:11:26] [ERROR]: ::1 - - "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:9527/student" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:24:00] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:12:21] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:24:21] [ERROR]: ::ffff:127.0.0.1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:12:30] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:24:46] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:16:43] [ERROR]: ::1 - - "GET /student HTTP/1.1" 404 146 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:25:25] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:16:46] [ERROR]: ::1 - - "GET /student HTTP/1.1" 404 146 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:25:43] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:16:48] [ERROR]: ::1 - - "GET /student HTTP/1.1" 404 146 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:26:01] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:17:20] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:26:34] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:17:34] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:27:35] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:18:47] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:27:36] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:18:48] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:27:49] [ERROR]: ::ffff:127.0.0.1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:18:49] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 14:28:01] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:19:14] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:12:57] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:19:18] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:13:03] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:19:27] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:14:09] [ERROR]: undefined - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:19:41] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:16:12] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:19:42] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:16:26] [INFO]: ::1 - - "POST /api/admin/login HTTP/1.1" 200 133 "http://localhost:9527/captcha.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:19:42] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:16:30] [INFO]: ::1 - - "POST /api/admin/login HTTP/1.1" 200 133 "http://localhost:9527/captcha.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:19:48] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:17:31] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:19:48] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:17:40] [INFO]: ::1 - - "POST /api/admin/login HTTP/1.1" 200 133 "http://localhost:9527/captcha.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:20:55] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:18:03] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:20:56] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:18:09] [INFO]: ::1 - - "POST /api/admin/login HTTP/1.1" 200 133 "http://localhost:9527/captcha.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:22:16] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:18:30] [INFO]: ::1 - - "POST /api/admin/login HTTP/1.1" 200 133 "http://localhost:9527/captcha.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:22:17] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:18:32] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:22:18] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:18:42] [INFO]: ::1 - - "POST /api/admin/login HTTP/1.1" 200 133 "http://localhost:9527/captcha.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:22:53] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:30:45] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:23:12] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:30:47] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:24:06] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:31:07] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:24:33] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:31:13] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:25:06] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:31:27] [ERROR]: undefined - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:25:08] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:31:28] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-api [2025-06-16 20:25:09] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+api [2025-06-17 15:32:06] [ERROR]: undefined - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+api [2025-06-17 15:33:40] [ERROR]: ::ffff:127.0.0.1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+api [2025-06-17 15:35:25] [ERROR]: undefined - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+api [2025-06-17 15:37:52] [INFO]: ::1 - - "POST /api/admin/login HTTP/1.1" 200 133 "http://localhost:9527/captcha.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+api [2025-06-17 15:37:57] [INFO]: ::1 - - "POST /api/admin/login HTTP/1.1" 200 133 "http://localhost:9527/captcha.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+api [2025-06-17 15:39:10] [ERROR]: undefined - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+api [2025-06-17 15:39:15] [INFO]: ::1 - - "POST /api/admin/login HTTP/1.1" 200 133 "http://localhost:9527/captcha.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+api [2025-06-17 15:39:15] [INFO]: ::1 - - "POST /api/admin/login HTTP/1.1" 200 133 "http://localhost:9527/captcha.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+api [2025-06-17 15:40:03] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+api [2025-06-17 15:40:07] [INFO]: ::1 - - "POST /api/admin/login HTTP/1.1" 200 133 "http://localhost:9527/captcha.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+api [2025-06-17 15:40:08] [INFO]: ::1 - - "POST /api/admin/login HTTP/1.1" 200 133 "http://localhost:9527/captcha.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+api [2025-06-17 15:40:26] [ERROR]: ::1 - - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+api [2025-06-17 15:40:27] [INFO]: ::1 - - "POST /api/admin/login HTTP/1.1" 200 31 "http://localhost:9527/captcha.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+api [2025-06-17 15:40:28] [INFO]: ::1 - - "POST /api/admin/login HTTP/1.1" 200 31 "http://localhost:9527/captcha.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 

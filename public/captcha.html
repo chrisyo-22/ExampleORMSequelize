@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Account: <input type="text" id="loginId">
+
+    </p>
+    <p>PWD: <input type="password" id="loginPwd">
+
+    </p>
+    <p id="captchaArea" style="display: none;">
+      Captcha: <input type="text" id="captcha" />
+      <img id="imgCaptcha" src="/captcha" alt="" />
+    </p>
+
+    <button>Login</button>
+    <script>
+
+        function refreshCaptcha(){
+            imgCaptcha.src = `/captcha?rad=${Math.random()}`
+        }
+        imgCaptcha.onclick = refreshCaptcha;
+        document.querySelector("button").onclick = async function () {
+            const body = {
+                loginId: loginId.value,
+                loginPwd: loginPwd.value,
+
+            }
+            if (captchaArea.style.display !== "none") {
+                body.captcha = captcha.value
+            }
+            const res = await fetch("/api/admin/login", {
+                method: "POST",
+                headers: {
+                    "content-type": "application/json",
+                },
+                body: JSON.stringify(body)
+            }).then(resp => resp.json());
+            if (res.code === 401) {
+                console.log("captcha incorrect!");
+                captchaArea.style.display = "block";
+                refreshCaptcha();
+            }
+            else if (res.data) {
+                console.log("Success");
+            }
+            else {
+                console.log("failed login");
+            }
+
+        }
+    </script>
+</body>
+
+</html>

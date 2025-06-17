@@ -13,7 +13,10 @@ const needTokenApi = [
 module.exports = (req, res, next) => {
   // /api/student/:id 和  /api/student/1771
   const apis = needTokenApi.filter((api) => {
-    const { regexp } = pathToRegexp(api.path);
+    if (api.path === "*") {
+      return false;
+    }
+    const {regexp} = pathToRegexp(api.path); // <-- FIXED
     return api.method === req.method && regexp.test(req.path);
   });
   if (apis.length === 0) {
